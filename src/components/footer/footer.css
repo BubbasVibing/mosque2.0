@@ -1,0 +1,312 @@
+.footer {
+  background-color: #091728;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+  min-height: 300px;
+}
+
+.footer-section h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background-color: #db9e30;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+}
+
+.social-icon:hover {
+  background-color: #db9e30;
+  transform: translateY(-3px);
+  color: white;
+}
+
+.social-icon svg {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: #db9e30;
+}
+
+.footer-section address {
+  text-align: center;
+  width: 100%;
+}
+
+.footer-section address p {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-section address p i {
+  color: #db9e30;
+}
+
+.footer-section address p svg {
+  color: #db9e30;
+}
+
+.footer-section address p svg.phone-icon {
+  transform: scaleX(-1);
+}
+
+/* Condensed Prayer Times */
+.prayer-times {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+  max-width: 230px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.prayer-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  aspect-ratio: 1/1;
+  text-align: center;
+}
+
+.prayer-time span:first-child {
+  opacity: 0.8;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.prayer-time span:last-child {
+  color: #db9e30;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Make Fajr and Dhuhr in first row, Asr and Maghrib in second row, Isha in third row */
+.prayer-time:nth-child(5) {
+  grid-column: 2;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  padding: 20px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #db9e30;
+}
+
+/* Prayer times note */
+.prayer-times-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  text-align: center;
+}
+
+.prayer-times-note svg {
+  color: #db9e30;
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .footer-section {
+    min-height: auto;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .prayer-times {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 220px;
+  }
+  
+  .prayer-time:nth-child(5) {
+    grid-column: 1 / span 2;
+    width: 90px;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+  }
+}
+
+.footer-top-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #db9e30;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #db9e30;
+  color: white;
+  margin-right: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+  color: #db9e30;
+}
+
+.footer-nav-link:hover {
+  color: #db9e30;
+}
+
+.footer-nav-link.active {
+  color: #db9e30;
+}
+
+.footer-copyright a {
+  color: #db9e30;
+  text-decoration: none;
+}
+
+.footer-bottom-links a {
+  color: #db9e30;
+  text-decoration: none;
+  margin-left: 20px;
+}

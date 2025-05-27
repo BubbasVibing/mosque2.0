@@ -1,0 +1,1207 @@
+/* Services Page Styles */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #091728;
+  --accent-color: #db9e30;
+  --text-color: #333333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #666666;
+}
+
+.services-page {
+  width: 100%;
+  overflow-x: hidden;
+  color: var(--text-color);
+  /* Removing custom font-family to use global Open Sans font */
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* Common Styles */
+.service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.service-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.service-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: var(--secondary-color);
+}
+
+.service-subtitle {
+  max-width: 800px;
+  margin: 15px auto 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 400;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.animate-on-scroll {
+  opacity: 0.5;
+  transform: translateY(10px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Buttons */
+.primary-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #c48b22;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn {
+  background-color: white;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.secondary-btn:hover {
+  background-color: #FFF8E6;
+  transform: translateY(-2px);
+}
+
+.outline-btn {
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.outline-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #aaa;
+}
+
+/* Hero Section - Updated to match Programs Page */
+.services-hero {
+  height: 400px;
+  background: linear-gradient(rgba(9, 23, 40, 0.85), rgba(9, 23, 40, 0.85)), url('https://images.unsplash.com/photo-1604063155785-ee4488b60209?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.services-hero-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.services-hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.services-hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease forwards 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Prayer Services Section - Clean, Organized Design */
+.prayer-services {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.prayer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.prayer-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.prayer-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.prayer-feature {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.prayer-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.prayer-feature svg {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.prayer-feature h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.prayer-feature p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #666;
+}
+
+.prayer-schedule {
+  background-color: #F9F3E6;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.prayer-schedule h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.schedule-table {
+  margin-bottom: 25px;
+}
+
+.schedule-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e1e7f0;
+}
+
+.prayer-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.prayer-divider {
+  flex-grow: 1;
+  height: 1px;
+  background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  margin: 0 15px;
+}
+
+.prayer-time {
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+/* Nikaah Services Section - Updated Design with Image */
+.nikaah-services {
+  padding: 80px 0;
+  background-color: #F9F7F2;
+  position: relative;
+  overflow: hidden;
+}
+
+.nikaah-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(219, 158, 48, 0.1);
+  border-radius: 50%;
+  transform: translate(150px, -150px);
+  z-index: 0;
+}
+
+.nikaah-services::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(219, 158, 48, 0.05);
+  border-radius: 50%;
+  transform: translate(-100px, 100px);
+  z-index: 0;
+}
+
+.nikaah-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+
+/* Updated Nikaah Info Section */
+.nikaah-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nikaah-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.nikaah-process {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.nikaah-process h3 {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* Process Steps Final Alignment */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  grid-template-rows: auto auto;
+  gap: 15px 20px;
+  align-items: start;
+}
+
+.step-number {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  align-self: flex-start;
+  margin-top: 2px;
+  box-shadow: 0 3px 8px rgba(219, 158, 48, 0.2);
+}
+
+.step-content {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-content h4 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  line-height: 1.2;
+}
+
+.step-content p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.nikaah-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Nikaah Image Section */
+.nikaah-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nikaah-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.nikaah-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.nikaah-image:hover img {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.nikaah-services-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card-icon {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.service-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Funeral Services Section - With Image and Visual Pop */
+.funeral-services {
+  padding: 70px 0;
+  background-color: #FBFBFB;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.funeral-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  position: relative;
+}
+
+.funeral-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.funeral-image-container {
+  position: relative;
+  height: 360px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.funeral-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.funeral-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(9, 23, 40, 0.3), rgba(9, 23, 40, 0.7));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.funeral-image-text {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.funeral-image-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.funeral-image-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+/* Modern Emergency Contact Design - WordPress Inspired - Compact */
+.emergency-assistance {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border: none;
+}
+
+.emergency-assistance::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--accent-color), #f9b949);
+  z-index: 1;
+}
+
+.emergency-assistance::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(219, 158, 48, 0.08) 0%, rgba(219, 158, 48, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.emergency-assistance-content {
+  padding-left: 12px;
+  flex: 1;
+}
+
+.emergency-assistance h3 {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.emergency-assistance p {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.emergency-contact-info {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+.contact-label {
+  display: none;
+}
+
+.emergency-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.emergency-phone:hover {
+  background-color: #f0f1f3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.emergency-phone .phone-icon {
+  background-color: var(--accent-color);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(219, 158, 48, 0.2);
+  font-size: 0.8rem;
+}
+
+.emergency-phone a {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.funeral-services-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.funeral-services-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.service-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid var(--accent-color);
+  overflow: hidden;
+  position: relative;
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(219, 158, 48, 0.05);
+  border-radius: 0 0 0 60px;
+  z-index: 0;
+}
+
+.service-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.09);
+}
+
+.service-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.service-item-icon {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.service-item-header h4 {
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 1.05rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.service-item p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.funeral-guide {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-top: 3px solid var(--accent-color);
+  margin-top: 5px;
+}
+
+.funeral-guide h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.funeral-guide p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.funeral-guide .outline-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 992px) {
+  .funeral-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .funeral-left-column {
+    gap: 15px;
+  }
+  
+  .funeral-image-container {
+    height: 300px;
+  }
+  
+  .funeral-services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .funeral-image-container {
+    height: 280px;
+  }
+  
+  .funeral-services-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .funeral-image-text h3 {
+    font-size: 1.3rem;
+  }
+  
+  .funeral-image-text p {
+    font-size: 0.95rem;
+  }
+  
+  .emergency-assistance {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+  
+  .emergency-assistance-content {
+    padding-left: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .emergency-contact-info {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
+    padding: 14px 16px;
+  }
+  
+  .funeral-guide {
+    padding: 16px;
+  }
+  
+  .funeral-image-container {
+    height: 240px;
+  }
+  
+  .funeral-image-overlay {
+    padding: 20px;
+  }
+  
+  .emergency-assistance {
+    padding: 14px;
+  }
+  
+  .emergency-assistance h3 {
+    font-size: 1rem;
+  }
+  
+  .emergency-assistance p {
+    font-size: 0.8rem;
+  }
+  
+  .emergency-phone {
+    padding: 6px 12px;
+  }
+  
+  .emergency-phone .phone-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .emergency-phone a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Membership Section - Premium Design */
+.membership-services {
+  padding: 80px 0;
+  background-color: #FAFBFF;
+  background-image: radial-gradient(#F1DFAF 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.membership-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.membership-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.membership-info h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.membership-info p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #546E7A;
+}
+
+.membership-benefits {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.membership-benefits h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--accent-color);
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.benefit-check {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #FFF8E6;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.benefit-check::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid var(--accent-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.membership-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.plan-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #eaeaea;
+  height: 100%;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card.featured {
+  background: linear-gradient(135deg, #FFFFFF, #FFF8E6);
+  box-shadow: 0 8px 25px rgba(219, 158, 48, 0.15);
+  border: 1px solid #F1DFAF;
+}
+
+.plan-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.plan-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.plan-price {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.period {
+  font-size: 0.9rem;
+  color: #78909C;
+  margin-bottom: 5px;
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.plan-features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  color: #546E7A;
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+}
+
+/* Call to Action Section */
+.services-cta {
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--accent-color), #c48b22);
+  color: white;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.services-cta .primary-btn {
+  background-color: white;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.services-cta .primary-btn:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .prayer-content,
+  .nikaah-content,
+  .funeral-content,
+  .membership-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .membership-plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .nikaah-services-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .membership-info {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-header h2 {
+    font-size: 2rem;
+  }
+  
+  .services-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .services-hero {
+    min-height: 300px;
+  }
+  
+  .membership-plans,
+  .nikaah-services-cards {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .funeral-services-list {
+    gap: 10px;
+  }
+  
+  .prayer-schedule,
+  .nikaah-process,
+  .funeral-cta,
+  .funeral-guide,
+  .membership-benefits {
+    padding: 20px;
+  }
+  
+  .nikaah-image {
+    height: 250px;
+  }
+  
+  /* Adjust process steps for mobile */
+  .process-steps {
+    padding: 0 5px;
+    gap: 20px;
+  }
+  
+  .process-step {
+    grid-template-columns: 40px 1fr;
+    gap: 12px 15px;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .step-content h4 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+  
+  .step-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .services-hero p {
+    font-size: 1rem;
+  }
+  
+  .prayer-feature,
+  .service-item,
+  .service-card {
+    padding: 15px;
+  }
+  
+  .prayer-name, .prayer-time {
+    font-size: 0.95rem;
+  }
+  
+  .amount {
+    font-size: 1.6rem;
+  }
+  
+  .nikaah-image {
+    height: 200px;
+  }
+}
